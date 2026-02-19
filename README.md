@@ -74,7 +74,7 @@ E2E starts the dev server automatically (or reuses it if already running). If th
 
 | Location selector | Menu by category | Search |
 |-------------------|------------------|--------|
-| ![Location selector](docs/Screenshot%202026-02-19%20at%2010.27.24.png) | ![Menu](docs/Screenshot%202026-02-19%20at%2010.28.06.png) | ![Search](docs/Screenshot%202026-02-19%20at%2010.28.35.png) |
+| ![Location selector](docs/Screenshot%202026-02-19%20at%2010.28.06.png) | ![Menu](docs/Screenshot%202026-02-19%20at%2010.27.24.png) | ![Search](docs/Screenshot%202026-02-19%20at%2010.28.35.png) |
 
 ---
 
