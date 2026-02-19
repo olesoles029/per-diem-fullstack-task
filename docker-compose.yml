@@ -1,0 +1,13 @@
+# Optional: run backend in Docker. Frontend can be served separately (e.g. npm run dev in host).
+# Requires .env with SQUARE_ACCESS_TOKEN and SQUARE_ENVIRONMENT.
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-3001}:3001"
+    env_file: .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3001

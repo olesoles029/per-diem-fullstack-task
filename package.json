@@ -1,0 +1,22 @@
+{
+  "name": "per-diem-fullstack-task",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"wait-on http://localhost:3001/health -t 30000 && npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "cd server && npm run test",
+    "test:client": "cd client && npm run test",
+    "start": "cd server && npm run start",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "wait-on": "^8.0.1",
+    "@playwright/test": "^1.49.0"
+  }
+}
